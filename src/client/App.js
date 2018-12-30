@@ -3,7 +3,11 @@ import './app.css';
 import ReactImage from './react.png';
 
 export default class App extends Component {
-  state = { username: null };
+  state = {
+    username: null,
+    name:'Google',
+    url:'http://google.com.ua',
+  };
 
   componentDidMount() {
     fetch('/api/getUsername')
@@ -12,12 +16,12 @@ export default class App extends Component {
   }
 
   render() {
-    const { username } = this.state;
+    const {username,name,url} = this.state;
     return (
       <div>
-        {username ? <div><h1>{`Hello ${username}`}</h1>  <p>Hello</p></div> : <h1>Loading.. please wait!</h1>}
+        {username ? <div><h1>Hello {username}</h1>  <p>Hello</p></div> : <h1>Loading.. please wait!</h1>}
         <img src={ReactImage} alt="react" />
-        <p className="main-link"> - <a href="https://google.com.ua">Google</a></p>
+        <p className="main-link"> - <a href={url}>{name}</a></p>
       </div>
     );
   }
