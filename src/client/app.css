@@ -6,3 +6,8 @@ body {
   text-align: center;
   margin: auto;
 }
+
+.main-link {
+  color: gray;
+  font-size: 16px;
+}

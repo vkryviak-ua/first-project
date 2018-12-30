@@ -17,6 +17,7 @@ export default class App extends Component {
       <div>
         {username ? <div><h1>{`Hello ${username}`}</h1>  <p>Hello</p></div> : <h1>Loading.. please wait!</h1>}
         <img src={ReactImage} alt="react" />
+        <p className="main-link"> - <a href="https://google.com.ua">Google</a></p>
       </div>
     );
   }
