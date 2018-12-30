@@ -13,8 +13,8 @@ git clone https://github.com/vkryviak-ua/first-project
 cd first-project
 
 # Install dependencies
-or npm install
+npm install
 
 # Start development server
-or npm run dev
+npm run dev
 ```
