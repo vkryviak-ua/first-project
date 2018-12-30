@@ -18,3 +18,5 @@ npm install
 # Start development server
 npm run dev
 ```
+5. Copy old .idea folder from previous project
+6. Open WebStorm
