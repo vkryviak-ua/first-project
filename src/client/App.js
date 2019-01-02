@@ -4,6 +4,7 @@ import ReactImage from './react.png';
 import Footer from './components/Footer';
 import Main from './components/Main';
 import Menu from './components/Menu';
+import Header from './components/Header';
 
 export default class App extends Component {
   state = { username: null };
@@ -22,6 +23,7 @@ export default class App extends Component {
         {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
         <img src={ReactImage} alt="react" />
         <Main/>
+        <Header/>
         <Footer/>
       </div>
     );
