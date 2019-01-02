@@ -10,14 +10,12 @@ export default class Menu extends Component {
       {name: 'Fifth link', url: 'https://list.in.ua/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2'},
     ],
   };
-
   render() {
     const {items} = this.state;
-
     return (
       <div>
         {
-          items.map(item => <p>  <a className='link-menu' href={item.url}>{item.name}</a></p> )
+          items.map(item => <p><a href={item.url}>{item.name}</a></p> )
         }
       </div>
     );
