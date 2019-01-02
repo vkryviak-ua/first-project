@@ -21,7 +21,6 @@ export default class App extends Component {
         <img src={ReactImage} alt="react" />
         <Main/>
         <Footer/>
-
       </div>
     );
   }
