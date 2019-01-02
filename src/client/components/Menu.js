@@ -17,7 +17,7 @@ export default class Menu extends Component {
     return (
       <div>
         {
-          items.map(item => <p>  <a className='link-menu' href={item.url}>{item.name}</a></p> )
+          items.map(item => <p>  <a href={item.url}>{item.name}</a></p> )
         }
       </div>
     );
