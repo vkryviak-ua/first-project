@@ -10,17 +10,15 @@ export default class Menu extends Component {
       {name: 'Fourth link', url: 'https://www.linkedin.com/feed/'},
       {name: 'Fifth link', url: 'https://list.in.ua/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2'},
     ],
-    menu:"Menu",
   };
   render() {
-    const {items, menu} = this.state;
+    const {items} = this.state;
     return (
-      <div>
-        <p>{menu}</p>
+      <menu>
         {
           items.map(item => <p><a href={item.url}>{item.name}</a></p> )
         }
-      </div>
+      </menu>
     );
   }
 }
