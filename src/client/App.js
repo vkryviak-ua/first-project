@@ -9,9 +9,9 @@ export default class App extends Component {
   render() {
     return (
       <React.Fragment>
+        <Header/>
         <Menu/>
         <Main/>
-        <Header/>
         <Footer/>
       </React.Fragment>
     );
