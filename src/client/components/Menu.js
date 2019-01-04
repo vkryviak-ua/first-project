@@ -15,7 +15,7 @@ export default class Menu extends Component {
     const {items} = this.state;
     return (
       <menu>
-        Menu
+        <p>Menu</p>
         {
           items.map(item => <p><a href={item.url}>{item.name}</a></p> )
         }
