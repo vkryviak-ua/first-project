@@ -8,12 +8,12 @@ import Header from './components/Header';
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <React.Fragment>
         <Menu/>
         <Main/>
         <Header/>
         <Footer/>
-      </div>
+      </React.Fragment>
     );
   }
 }
