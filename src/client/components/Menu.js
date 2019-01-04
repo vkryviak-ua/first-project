@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./menu.css";
 
 export default class Menu extends Component {
   state = {
@@ -13,11 +14,12 @@ export default class Menu extends Component {
   render() {
     const {items} = this.state;
     return (
-      <div>
+      <menu>
+        <p>Menu</p>
         {
           items.map(item => <p><a href={item.url}>{item.name}</a></p> )
         }
-      </div>
+      </menu>
     );
   }
 }
