@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './app.css';
-
 import Footer from './components/Footer';
 import Main from './components/Main';
 import Menu from './components/Menu';
