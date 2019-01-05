@@ -4,7 +4,7 @@ import './header.css';
 export default class Header extends Component {
     render() {
         return (
-            <p className = "welcome"> Welcome to the Best Project </p>
+            <header className = "mainGreeting"> Welcome to the Best Project </header>
                );
     }
 }
