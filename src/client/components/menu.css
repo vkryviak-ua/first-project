@@ -4,3 +4,10 @@ p {
 a {
     font-size: 14px;
 }
+.links :link {
+    color: blue;
+}
+.links :hover {
+    color: gray;
+    text-decoration: none;
+}
