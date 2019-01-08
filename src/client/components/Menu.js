@@ -14,10 +14,10 @@ export default class Menu extends Component {
   render() {
     const {items} = this.state;
     return (
-      <menu>
+      <menu className = "menu-text">
         <p>Menu</p>
         {
-          items.map(item => <p className = "links"><a href={item.url}>{item.name}</a></p> )
+          items.map(item => <p><a href={item.url}>{item.name}</a></p> )
         }
       </menu>
     );
