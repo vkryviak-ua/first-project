@@ -12,6 +12,7 @@ a {
     text-decoration: none;
 }
 .menu-text {
-    background: url(/public/assets/link-256.png ) orange;
+    background: url(/public/assets/link-256.png );
+    background-color: orange;
     background-position: left top;
 }
