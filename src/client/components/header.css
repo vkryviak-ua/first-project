@@ -1,6 +1,7 @@
 .main-greeting {
     text-align: center;
-}
-.header-img {
-    background-color: green;
+    background: url("../../../public/assets/We_The_Best_logo.png")
+    green;
+    background-position: center right;
+    background-repeat: no-repeat;
 }
