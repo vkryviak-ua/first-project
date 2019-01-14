@@ -10,3 +10,7 @@ a {
     color: gray;
     text-decoration: none;
 }
+
+.menu-text p a {
+    color: blue;
+}
