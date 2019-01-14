@@ -1,12 +1,11 @@
 p {
     font-size: 16px;
 }
+
 a {
     font-size: 14px;
 }
-.menu-text p a:link {
-    color: blue;
-}
+
 .menu-text p a:hover {
     color: gray;
     text-decoration: none;
