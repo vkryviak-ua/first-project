@@ -1,3 +1,6 @@
 .main-greeting {
-     text-align: center;
+    text-align: center;
+    background: url("/public/assets/We_The_Best_logo.png") green;
+    background-position: center right;
+    background-repeat: no-repeat;
 }
