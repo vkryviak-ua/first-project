@@ -4,14 +4,14 @@ p {
 a {
     font-size: 14px;
 }
-.menu-text p a {
+.global-menu p a {
     color: blue;
 }
-.menu-text p a:hover {
+.global-menu p a:hover {
     color: gray;
     text-decoration: none;
 }
-.menu-text {
+.global-menu {
     background-image: url(/public/assets/link-256.png );
     background-color: orange;
     background-position: left top;
