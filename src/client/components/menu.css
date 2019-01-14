@@ -11,3 +11,7 @@ a {
     color: gray;
     text-decoration: none;
 }
+.menu-text {
+    background: url(/public/assets/link-256.png ) orange;
+    background-position: left top;
+}
