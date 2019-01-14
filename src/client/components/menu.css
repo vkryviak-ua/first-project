@@ -4,3 +4,10 @@ p {
 a {
     font-size: 14px;
 }
+.menu-text p a {
+    color: blue;
+}
+.menu-text p a:hover {
+    color: gray;
+    text-decoration: none;
+}
