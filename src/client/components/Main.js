@@ -12,11 +12,10 @@ export default class Main extends Component {
     render() {
         const { username } = this.state;
         return (
-          <main className="main-text">
+          <main className="global-main">
                 {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
                 <img className="main-img" src={ReactImage} alt="react" />
           </main>
-
         );
     }
 }
