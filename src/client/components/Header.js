@@ -4,7 +4,9 @@ import './header.css';
 export default class Header extends Component {
     render() {
         return (
-            <header className="global-header"> Welcome to the Best Project </header>
+            <div className="global-header">
+            <header> Welcome to the Best Project </header>
+            </div>
         );
     }
 }

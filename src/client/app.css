@@ -6,3 +6,35 @@ body {
   text-align: center;
   margin: auto;
 }
+
+.global-header {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 50px;
+}
+
+.global-menu {
+  position: absolute;
+  left : 0;
+  width: 200px;
+  top: 50px;
+  height: 100%;
+}
+
+.global-main {
+  position: absolute;
+  left: 200px;
+  width: 100%;
+  top: 50px;
+  height: 100%;
+}
+
+.global-footer {
+  position: absolute;
+  left: 0;
+  width: calc(100% - 20px);
+  bottom: 0;
+  height: 100px;
+}
