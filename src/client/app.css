@@ -36,7 +36,8 @@ body {
 .global-footer {
   position: absolute;
   left: 0;
-  width: 100%;
+  width: calc(100% - 20px);
   bottom: 0;
-  height: 100px;
+  height: 80px;
+  padding: 10px;
 }
