@@ -14,14 +14,12 @@ export default class Menu extends Component {
   render() {
     const {items} = this.state;
     return (
-        <div className = "global-menu">
-      <menu>
+      <menu className = "global-menu">
         <p>Menu</p>
         {
           items.map(item => <p><a href={item.url}>{item.name}</a></p> )
         }
       </menu>
-        </div>
     );
   }
 }

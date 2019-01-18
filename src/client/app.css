@@ -20,15 +20,15 @@ body {
   left : 0;
   width: 200px;
   top: 50px;
-  height: 100%;
+  bottom: 0;
 }
 
 .global-main {
   position: absolute;
   left: 200px;
-  width: 100%;
+  right: 0;
   top: 50px;
-  height: 100%;
+  bottom: 0;
 }
 
 .global-footer {
