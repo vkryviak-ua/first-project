@@ -6,7 +6,6 @@ body {
   text-align: center;
   margin: auto;
 }
-
 .global-header {
   position: absolute;
   left: 0;
@@ -20,7 +19,9 @@ body {
   left : 0;
   width: 200px;
   top: 50px;
-  bottom: 0;
+  bottom: 120px;
+  margin: 0;
+  background-repeat: no-repeat;
 }
 
 .global-main {
@@ -28,13 +29,15 @@ body {
   left: 200px;
   right: 0;
   top: 50px;
-  bottom: 0;
+  bottom: 120px;
+  margin: 0;
 }
 
 .global-footer {
   position: absolute;
   left: 0;
-  width: calc(100% - 20px);
+  width: 1360px;
   bottom: 0;
   height: 100px;
+  margin: 0;
 }
