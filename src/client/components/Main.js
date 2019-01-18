@@ -16,7 +16,6 @@ export default class Main extends Component {
                 {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
                 <img className="main-img" src={ReactImage} alt="react" />
           </main>
-
         );
     }
 }
