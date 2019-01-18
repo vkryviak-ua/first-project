@@ -19,7 +19,7 @@ body {
   left : 0;
   width: 200px;
   top: 50px;
-  bottom: 120px;
+  bottom: 100px;
   margin: 0;
   background-repeat: no-repeat;
 }
@@ -29,14 +29,14 @@ body {
   left: 200px;
   right: 0;
   top: 50px;
-  bottom: 120px;
+  bottom: 100px;
   margin: 0;
 }
 
 .global-footer {
   position: absolute;
   left: 0;
-  width: 1360px;
+  width: 100%;
   bottom: 0;
   height: 100px;
   margin: 0;
