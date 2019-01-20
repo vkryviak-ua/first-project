@@ -4,7 +4,7 @@ import './main.css';
 
 export default class Main extends Component {
     state = { username: null };
-  clickOnMe = () => {
+    clickOnMe = () => {
     alert('You are awesome');
   };
 
@@ -17,8 +17,8 @@ export default class Main extends Component {
         const { username } = this.state;
         return (
           <main className="global-main">
-                {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
-                <img className="main-img" src={ReactImage} alt="react" />
+            {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
+            <img className="main-img" src={ReactImage} alt="react" />
             <button onClick={this.clickOnMe}>
               Click on me
             </button>
