@@ -28,7 +28,7 @@ body {
 .global-main {
   position: absolute;
   left: 200px;
-  right: 0;
+  right: 100px;
   top: 50px;
   bottom: 100px;
 }
@@ -39,4 +39,11 @@ body {
   width: calc(100% - 20px);
   bottom: 0;
   height: 80px;
+}
+.global-info {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  bottom: 100px;
+  width: 100px;
 }
