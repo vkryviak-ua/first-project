@@ -17,7 +17,7 @@ export default class Menu extends Component {
       <menu className = "global-menu">
         <p>Menu</p>
         {
-          items.map(item => <p><a href={item.url}>{item.name}</a></p> )
+          items.map((item,index) => <p key={index}><a href={item.url}>{item.name}</a></p> )
         }
       </menu>
     );
