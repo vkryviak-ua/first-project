@@ -7,10 +7,10 @@ export default class Info extends Component {
       <aside className="global-info">
         New component Info.
       <div>Name</div>
-      <div><input></input></div>
+      <div><input/></div>
       <div>Description</div>
       <div><textarea></textarea></div>
-      <div><button onClick={this.View}> View </button></div>
+      <div><button> View </button></div>
       </aside>
     );
   }
