@@ -6,12 +6,12 @@ export default class Info extends Component {
     return (
       <aside className="global-info">
         New component Info.
-      <div>Name</div>
-      <div><input/></div>
-      <div>Description</div>
-      <div><textarea></textarea></div>
-      <div><button> View </button></div>
-      </aside>
+        <div>Name</div>
+        <div><input/></div>
+        <div>Description</div>
+        <div><textarea></textarea></div>
+        <div><button> View </button></div>
+        </aside>
     );
   }
 }
