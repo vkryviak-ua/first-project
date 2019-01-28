@@ -5,3 +5,9 @@
     background-color: red;
     border: 2px solid black;
 }
+input {
+    width: 96px;
+}
+textarea {
+    width: 94px;
+}
