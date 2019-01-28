@@ -1,0 +1,20 @@
+root = true
+
+[*]
+indent_style = tab
+tab_width = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+# NPM essentially cannot handle tabs with any of the commands that modify the package.json
+# Better to let it win the fight...
+# https://github.com/npm/npm/pull/3062#issuecomment-195109369
+# build.yaml is using soft tabs set at two as well.
+[{package.json,*.yaml,.eslintrc*}]
+indent_style = space
+indent_size = 2
