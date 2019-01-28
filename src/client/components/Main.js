@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ReactImage from '../react.png';
 import './main.css';
+import Article from './Article';
+
 export default class Main extends Component {
     state = { username: null };
 
@@ -13,8 +15,9 @@ export default class Main extends Component {
         const { username } = this.state;
         return (
           <main className="global-main">
-                {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
-                <img className="main-img" src={ReactImage} alt="react" />
+            {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
+            <img className="main-img" src={ReactImage} alt="react" />
+            <Article/>
           </main>
         );
     }
