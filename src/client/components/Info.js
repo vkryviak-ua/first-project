@@ -11,7 +11,7 @@ export default class Info extends Component {
         <div>Description</div>
         <div><textarea></textarea></div>
         <div><button> View </button></div>
-        </aside>
+      </aside>
     );
   }
 }
