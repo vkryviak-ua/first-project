@@ -11,6 +11,9 @@ export default class Menu extends Component {
       {name: 'Fifth link', url: 'https://list.in.ua/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2'},
     ],
   };
+	clickOnMe = () => {
+		alert('You are awesome')
+	};
   render() {
     const {items} = this.state;
     return (
@@ -19,6 +22,9 @@ export default class Menu extends Component {
         {
           items.map((item,index) => <p key={index}><a href={item.url}>{item.name}</a></p> )
         }
+				<button className="main-button" onClick={this.clickOnMe}>
+					Click on me
+				</button>
       </menu>
     );
   }

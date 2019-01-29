@@ -16,3 +16,7 @@ a {
     background-color: orange;
     background-position: left top;
 }
+.main-button {
+	background-color: red;
+	border: black solid;
+}
