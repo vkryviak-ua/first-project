@@ -25,10 +25,10 @@ function generateRandomNumber(min, max) {
 
 export default class Article extends Component {
 	render() {
-		const generateNambre = generateRandomNumber(0, 2);
+		const randomTextIndex = generateRandomNumber(0, 2);
 		return (
 			<article className="article">
-				{randomText[generateNambre]}
+				{randomText[randomTextIndex]}
 			</article>
 		);
 	}
