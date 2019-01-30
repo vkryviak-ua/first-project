@@ -12,7 +12,7 @@ export default class Menu extends Component {
     ],
   };
 	clickOnMe = () => {
-		alert('You are awesome')
+		alert('You are awesome');
 	};
   render() {
     const {items} = this.state;
