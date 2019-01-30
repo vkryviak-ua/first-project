@@ -30,7 +30,6 @@ export default class Article extends Component {
 			<article className="article">
 				{randomText[generateNambre]}
 			</article>
-
 		);
 	}
 }
