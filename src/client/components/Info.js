@@ -2,21 +2,36 @@ import React, {Component} from 'react';
 import './info.css';
 
 export default class Info extends Component {
-	render() {
-		function pushMe() {
-			alert("This is a form");
-		}
+	state = {
+		valueInput: '',
+		valueTextarea: ''
+	}
 
+	pushMe = () => {
+		alert(`Hello ${this.state.valueInput}  You sad: ${this.state.valueTextarea}`);
+	}
+
+	changeValueInput = () => {
+		this.setState({valueInput: event.target.value});
+	}
+
+	changeValueTextarea = () => {
+		this.setState({valueTextarea: event.target.value});
+	}
+
+	render() {
 		return (
 			<aside className="global-info">
-				New component Info.
-				<div>Name</div>
-				<div><input/></div>
-				<div>Description</div>
-				<div><textarea></textarea></div>
-				<div>
-					<button className="info-button" onClick={pushMe}> View</button>
-				</div>
+				<form onSubmit={this.pushMe}>
+					New component Info.
+					<div>Name</div>
+					<div><input type="text" value={this.state.valueInput} onChange={this.changeValueInput}/></div>
+					<div>Description</div>
+					<div><textarea type="text" value={this.state.valueTextarea} onChange={this.changeValueTextarea}/></div>
+					<div>
+						<button type="submit" className="info-button" onClick={this.pushMe}> View</button>
+					</div>
+				</form>
 			</aside>
 		);
 	}
