@@ -3,20 +3,20 @@ import './info.css';
 
 export default class Info extends Component {
 	state = {
-		valueInput: '',
-		valueTextarea: ''
+		name: '',
+		description: ''
 	};
 
 	pushMe = () => {
-		alert(`Hello ${this.state.valueInput}.  You sad: ${this.state.valueTextarea}`);
+		alert(`Hello ${this.state.name}.  You sad: ${this.state.description}`);
 	};
 
-	changeValueInput = () => {
-		this.setState({valueInput: event.target.value});
+	changeNameHandler = () => {
+		this.setState({name: event.target.value});
 	};
 
-	changeValueTextarea = () => {
-		this.setState({valueTextarea: event.target.value});
+	changeDescriptionHandler = () => {
+		this.setState({description: event.target.value});
 	};
 
 	render() {
@@ -25,9 +25,9 @@ export default class Info extends Component {
 				<form onSubmit={this.pushMe}>
 					New component Info.
 					<div>Name</div>
-					<div><input type="text" value={this.state.valueInput} onChange={this.changeValueInput}/></div>
+					<div><input type="text" value={this.state.name} onChange={this.changeNameHandler}/></div>
 					<div>Description</div>
-					<div><textarea value={this.state.valueTextarea} onChange={this.changeValueTextarea}/></div>
+					<div><textarea value={this.state.description} onChange={this.changeDescriptionHandler}/></div>
 					<div>
 						<button type="submit" className="info-button" onClick={this.pushMe}> View</button>
 					</div>
