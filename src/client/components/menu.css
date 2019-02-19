@@ -1,21 +1,32 @@
 p {
-    font-size: 16px;
+	font-size: 16px;
 }
+
 a {
-    font-size: 14px;
+	font-size: 14px;
 }
+
 .global-menu p a {
-    color: blue;
+	color: blue;
+	font-size: 24px;
 }
+
 .global-menu p a:hover {
-    color: gray;
-    text-decoration: none;
+	color: gray;
+	text-decoration: none;
 }
+
 .global-menu {
-    background-image: url(/public/assets/link-256.png );
-    background-color: orange;
-    background-position: left top;
+	background-image: url(/public/assets/link-256.png);
+	background-color: orange;
+	background-position: bottom;
+	background-size: 200px;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	text-align: left;
+	box-sizing: border-box;
 }
+
 .menu-button {
 	background-color: red;
 	border: black solid;
