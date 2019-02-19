@@ -6,12 +6,12 @@ import Article from './Article';
 export default class Main extends Component {
 	state = {
 		username: null,
-		showTextAfterImage: '',
+		showTextAfterImage: false,
 	};
 
 	pressTheImage = () => {
 		this.setState({showTextAfterImage: true});
-		return alert("You have pressed on image");
+		alert("You have pressed on image");
 	};
 
 	componentDidMount() {
@@ -22,6 +22,7 @@ export default class Main extends Component {
 
 	render() {
 		const {username} = this.state;
+		/*const {text} = this.state.showTextAfterImage*/
 		return (
 			<main className="global-main">
 				{username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
