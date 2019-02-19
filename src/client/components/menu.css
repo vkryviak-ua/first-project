@@ -8,6 +8,7 @@ a {
 
 .global-menu p a {
 	color: blue;
+	font-size: 24px;
 }
 
 .global-menu p a:hover {
@@ -29,6 +30,4 @@ a {
 .menu-button {
 	background-color: red;
 	border: black solid;
-	font-size: 24px;
-	left: 20px;
 }
