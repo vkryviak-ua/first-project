@@ -11,7 +11,6 @@ export default class Main extends Component {
 
 	pressTheImage = () => {
 		this.setState({showTextAfterImage: true});
-		alert("You have pressed on image");
 	};
 
 	componentDidMount() {
@@ -22,11 +21,12 @@ export default class Main extends Component {
 
 	render() {
 		const {username} = this.state;
-		/*const {text} = this.state.showTextAfterImage*/
+		const {showTextAfterImage} = this.state;
 		return (
 			<main className="global-main">
 				{username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
-				<img className="main-img" src={ReactImage} alt="react" onClick={this.pressTheImage}/>
+				<img className="main-img" src={ReactImage} alt="react" onClick={this.pressTheImage}
+					{showTextAfterImage ? <h1>{'You have pressed on image'}</h1> : <h1>{''}</h1>} />
 				<Article/>
 			</main>
 		);
