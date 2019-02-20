@@ -27,7 +27,7 @@ export default class Menu extends Component {
 		],
 	};
 	clickOnMe = () => {
-		alert('Menu has ${items.length} items');
+		alert(`Menu has ${this.state.items.length} items`);
 	};
 
 	render() {
