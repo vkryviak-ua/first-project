@@ -4,3 +4,8 @@
 .main-img {
     width:200px;
 }
+.dateAndTime {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
