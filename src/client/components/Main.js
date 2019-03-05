@@ -3,12 +3,13 @@ import ReactImage from '../react.png';
 import './main.css';
 import Article from './Article';
 
-let dateAndTime = new Date();
-let year = dateAndTime.getFullYear();
-let mount = dateAndTime.getMonth()+1;
-let day = dateAndTime.getDate();
-let hour = dateAndTime.getHours();
-let minutes = dateAndTime.getMinutes();
+const dateAndTime = new Date();
+const year = dateAndTime.getFullYear();
+const mount = dateAndTime.getMonth() + 1;
+const day = dateAndTime.getDate();
+const hour = dateAndTime.getHours();
+const minutes = dateAndTime.getMinutes();
+
 export default class Main extends Component {
 	state = {
 		username: null,
@@ -30,7 +31,6 @@ export default class Main extends Component {
 		return (
 			<main className="global-main">
 				{username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
-				{/*<div className="dateAndTime"> {`${dateAndTime}`} </div>*/}
 				<div className="dateAndTime"> {`${year}-${mount}-${day} ${hour}:${minutes}`} </div>
 				<img className="main-img" src={ReactImage} alt="react" onClick={this.pressTheImage}/>
 				{showTextAfterImage ? <div>You have pressed on image</div> : ''}
