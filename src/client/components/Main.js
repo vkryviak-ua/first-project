@@ -30,8 +30,8 @@ export default class Main extends Component {
 		const { username, showTextAfterImage } = this.state;
 		return (
 			<main className="global-main">
-				{username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
 				<div className="dateAndTime"> {`${year}-${mount}-${day} ${hour}:${minutes}`} </div>
+				{username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
 				<img className="main-img" src={ReactImage} alt="react" onClick={this.pressTheImage}/>
 				{showTextAfterImage ? <div>You have pressed on image</div> : ''}
 				<Article/>

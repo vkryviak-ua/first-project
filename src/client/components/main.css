@@ -7,7 +7,6 @@
 }
 
 .dateAndTime {
-	position: absolute;
-	right: 10px;
-	top: 10px;
+	float: right;
+	padding: 10px;
 }
