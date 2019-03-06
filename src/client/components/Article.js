@@ -24,8 +24,12 @@ function generateRandomNumber(min, max) {
 }
 
 export default class Article extends Component {
+	state = {
+		randomTextIndex: generateRandomNumber(0, 2),
+	};
+
 	render() {
-		const randomTextIndex = generateRandomNumber(0, 2);
+		const {randomTextIndex} = this.state;
 		return (
 			<article className="article">
 				{randomText[randomTextIndex]}
