@@ -1,6 +1,12 @@
 .global-main {
-    background-color:yellow;
+	background-color: yellow;
 }
+
 .main-img {
-    width:200px;
+	width: 200px;
+}
+
+.dateAndTime {
+	float: right;
+	padding: 10px;
 }
