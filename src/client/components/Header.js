@@ -13,8 +13,9 @@ export default class Header extends Component {
 	render() {
 		return (
 			<header className={`global-header ${this.state.isBackgroundBlack ? 'black-background' : ''}`}
-							onClick={this.pressTheHeader}> Welcome to the Best
-				Project </header>
+							onClick={this.pressTheHeader}>
+				Welcome to the Best Project
+			</header>
 		);
 	}
 }
