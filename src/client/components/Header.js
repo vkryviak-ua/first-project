@@ -3,7 +3,7 @@ import './header.css';
 
 export default class Header extends Component {
 	state = {
-		isBackgroundBlack: true,
+		isBackgroundBlack: false,
 	};
 
 	pressTheHeader = () => {
