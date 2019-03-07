@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './info.css';
 
 export default class Info extends Component {
@@ -12,22 +12,23 @@ export default class Info extends Component {
 	};
 
 	changeNameHandler = () => {
-		this.setState({name: event.target.value});
+		this.setState({ name: event.target.value });
 	};
 
 	changeDescriptionHandler = () => {
-		this.setState({description: event.target.value});
+		this.setState({ description: event.target.value });
 	};
 
 	render() {
 		return (
 			<aside className="global-info">
-				<form onSubmit={this.pushMe}>
+				<form>
 					New component Info.
 					<div>Name</div>
 					<div><input type="text" value={this.state.name} onChange={this.changeNameHandler}/></div>
 					<div>Description</div>
-					<div><textarea value={this.state.description} onChange={this.changeDescriptionHandler}/></div>
+					<div><textarea value={this.state.description} onChange={this.changeDescriptionHandler}/>
+					</div>
 					<div>
 						<button type="submit" className="info-button" onClick={this.pushMe}> View</button>
 					</div>
