@@ -28,12 +28,12 @@ export default class Menu extends Component {
 	};
 	addLinkAndShowListLength = () => {
 		const { items } = this.state;
-		alert(`Menu has ${this.state.items.length + 1} items`);
 		items.push({
 			name: 'Dynamic Link',
 			url: 'https://reactjs.org/'
 		});
 		this.setState(this.state);
+		alert(`Menu has ${this.state.items.length} items`);
 	};
 
 	render() {
