@@ -22,7 +22,7 @@ export default class Info extends Component {
 	render() {
 		return (
 			<aside className="global-info">
-				<form>
+				<form onSubmit={this.pushMe}>
 					New component Info.
 					<div>Name</div>
 					<div><input type="text" value={this.state.name} onChange={this.changeNameHandler}/></div>
@@ -30,7 +30,7 @@ export default class Info extends Component {
 					<div><textarea value={this.state.description} onChange={this.changeDescriptionHandler}/>
 					</div>
 					<div>
-						<button type="submit" className="info-button" onClick={this.pushMe}> View</button>
+						<button type="submit" className="info-button"> View</button>
 					</div>
 				</form>
 			</aside>
