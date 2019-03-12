@@ -26,7 +26,13 @@ export default class Menu extends Component {
 			},
 		],
 	};
-	clickOnMe = () => {
+	addLinkAndShowListLength = () => {
+		const { items } = this.state;
+		items.push({
+			name: 'Dynamic Link',
+			url: 'https://reactjs.org/'
+		});
+		this.setState(this.state);
 		alert(`Menu has ${this.state.items.length} items`);
 	};
 
@@ -38,8 +44,8 @@ export default class Menu extends Component {
 				{
 					items.map((item, index) => <p key={index}><a href={item.url}>{item.name}</a></p>)
 				}
-				<button className="menu-button" onClick={this.clickOnMe}>
-					Click on me
+				<button className="menu-button" onClick={this.addLinkAndShowListLength}>
+					Add Link
 				</button>
 			</menu>
 		);
