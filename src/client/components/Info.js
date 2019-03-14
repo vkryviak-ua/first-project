@@ -7,7 +7,8 @@ export default class Info extends Component {
 		description: ''
 	};
 
-	pushMe = () => {
+	pushMe = (event) => {
+		event.preventDefault();
 		alert(`Hello ${this.state.name}.  You sad: ${this.state.description}`);
 	};
 
@@ -25,9 +26,11 @@ export default class Info extends Component {
 				<form onSubmit={this.pushMe}>
 					New component Info.
 					<div>Name</div>
-					<div><input type="text" value={this.state.name} onChange={this.changeNameHandler}/></div>
+					<div>
+						<input type="text" value={this.state.name} onChange={this.changeNameHandler}/></div>
 					<div>Description</div>
-					<div><textarea value={this.state.description} onChange={this.changeDescriptionHandler}/>
+					<div>
+						<textarea value={this.state.description} onChange={this.changeDescriptionHandler}/>
 					</div>
 					<div>
 						<button type="submit" className="info-button"> View</button>
