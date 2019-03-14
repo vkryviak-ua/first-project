@@ -27,12 +27,18 @@ export default class Article extends Component {
 	state = {
 		randomTextIndex: generateRandomNumber(0, 2),
 	};
+	showOneOfOtherText = () => {
+		this.setState({clicked: randomText[Math.floor(Math.random() * randomText.length)]})
+	};
 
 	render() {
 		const {randomTextIndex} = this.state;
 		return (
 			<article className="article">
-				{randomText[randomTextIndex]}
+				<button className="article-button" onClick={this.showOneOfOtherText}>
+					Next Button
+				</button>
+				 {randomText[randomTextIndex]&&this.state.clicked}
 			</article>
 		);
 	}
